@@ -15,6 +15,12 @@ This is a typescript project. It compiles to a single-file ecma5.1 script.
 I have provided type declarations in the global.d.ts for the objects that worldpainter provides.
 The dimension and world2 interfaces are partly AI generated, so dont rely on them being 100% correct.
 
+You can (if you really feel like self harm) write your project directly in JS.
+for that, get rid of the tsc compile step in the package.json, and write your code in "compiled"
+webpack will then bundle your code into a single file.
+
+But in this world of today,noone should be writing JS directly anymore. We are not caveman after all.
+
 # Deploying
 You need to correctly set these values in the package.json file for the build scripts to work:
 ```js
