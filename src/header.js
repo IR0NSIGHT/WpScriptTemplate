@@ -1,6 +1,3 @@
-// script.name=WorldPainter Script v1.0.0 by IR0NSIGHT
-// script.description=A script to do things in worldpainter
-
 //script.param.mcVersion.type=integer
 //script.param.mcVersion.description=minecraft version 1.??
 //script.param.mcVersion.optional=false
@@ -12,4 +9,3 @@
 //script.param.pretty.optional=false
 //script.param.pretty.default=true
 //script.param.pretty.displayName=Format output nicely
-

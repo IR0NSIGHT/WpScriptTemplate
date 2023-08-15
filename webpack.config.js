@@ -1,24 +1,11 @@
 const path = require("path");
-
+const package = require("./package.json");
 module.exports = {
-  entry: ["./compiled/ExportStats/ExportStatIndex.js"],
+  entry: [package.main.replace("src","compiled").replace(".ts",".js")],
   devtool: false,
   mode: "production",
-
-  //module: {
-  //  rules: [
-  //    {
-  //      test: /\.js$/,
-  //      exclude: /node_modules/,
-  //      use: {
-  //        loader: 'babel-loader'
-  //      }
-  //    }
-  //  ]
-  //},
-
   output: {
-    filename: "BiomeStatistic.js",
+    filename: "MyScript.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
     environment: {

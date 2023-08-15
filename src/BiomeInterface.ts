@@ -1,6 +1,7 @@
 export const getBiomeAt = (x: number, y: number): number => {
     return dimension.getLayerValueAt(org.pepsoft.worldpainter.layers.Biome.INSTANCE, x, y)
 }
+
 export const getMapping = (mcVersion: number): string[] => {
     if (mcVersion >= 19)
         return org.pepsoft.worldpainter.biomeschemes.Minecraft1_19Biomes.BIOME_NAMES as string[]
@@ -11,6 +12,7 @@ export const getMapping = (mcVersion: number): string[] => {
     else
         throw new Error("unsupported mc version")
 }
+
 export const getBiomeName = (id: number, mapping: string[]): string => {
     if (id < 0 || id >= mapping.length)
         return "invalid biome"
