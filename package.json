@@ -1,6 +1,6 @@
 {
   "name": "WpScriptTemplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a template repo to develop worldpainter scripts in typescript",
   "main": "./src/index.js",
   "scripts": {
